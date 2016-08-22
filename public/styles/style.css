@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  white-space:nowrap;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: helvetica;
+}
+
+h1 {
+  font-family: helvetica;
+  text-align: center;
+  width: 100%;
+  color: #373737;
+}
+
+h2 {
+  font-family: helvetica;
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  background-color: #C7DFC5;
+  height: 22px;
+  color: #373737;
+  padding-top: 2px;
+}
+
+h3 {
+  font-family: helvetica;
+  text-align: center;
+  width: 100%;
+  padding-top: 2px;
+  font-size: 14px;
+  background-color: #C1DBE3;
+  height: 22px;
+  color: #373737;
+}
+
+header {
+  width: 100%;
+  background: #ffffff;
+  position: fixed;
+  height: 130px;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+}
+
+#main, #search {
+  padding: 10px;
+}
+
+#search {
+  width: 70%;
+}
+
+#data {
+  white-space:nowrap;  
+  z-index: 1;
+}
+
+#main {
+  width: 70%;
+  height: 70%;
+  display: inline-block;
+  overflow-y: scroll;
+}
+
+#details {
+  margin-right: 15px;
+  margin-top: 128px;
+  display: inline-block;
+  width: 30%;
+  padding-right: 15px;
+  padding-left: 15px;
+  z-index: 3;
+  height: 100%;
+  position: fixed;
+  vertical-align: top;
+}
+
+#visualize {
+  position: fixed;
+  background: #ffffff;
+  height: 35%;
+  width: 100%;
+  bottom: 0;  
+  z-index: 2;
+}
+
+.search-labels, .graph-labels {
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+}
+
+.search-fields {
+  width: 100%;
+}
+
+.search-fields > li > input {
+  width: 100%;
+}
+
+.jobs {
+  margin-top: 130px;
+  margin-bottom: 15px;
+}
+
+.job-row, .search-row {
+  height: 22px;
+}
+
+.job-row {
+  cursor: pointer;
+  position: relative;
+  font-size: 12px;
+}
+
+.job-row > ul {
+  padding-top: 4px;
+  padding-left: 5px;
+  height: 100%;
+  position: relative;
+}
+
+.job-row:nth-child(odd) {
+  background: #cdcdcd;
+}
+
+.job-elements > li, .search-elements > li, .graph-elements > li {
+  display: inline-block;
+  width: 20%;
+  padding-right: 5px;
+}
+
+.job-details {
+  vertical-align: top;
+  position: relative;
+}
+
+.details-label {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  width: 50%;
+  display: inline-block;
+  color: #373737;
+}
+
+.details-value {
+  font-size: 12px;
+  color: #373737;
+  text-align: right;
+  width: 50%;
+  display: inline-block;
+}
+
+.selected {
+  background: #FCE694;
+}
+
+.touched {
+  color: #FCE694;
+}
+
+input {
+  background: #F6FEAA;
+}
+
+#visualize {
+  position: relative;
+  padding: 15px;
+  width: 70%;
+  overflow-x: hidden;
+}
+
+#graph {
+  padding: 25px;
+}
+
+#graph > div {
+  overflow-x: scroll;
+  background: #C7DFC5;  
+  width: 8px;
+  margin-right: 2px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+#graph-list {
+  position: fixed;
+  width: 70%;
+  height: 25px;
+}
+
+#graph-list li {
+  cursor: pointer;
+}
+
+#options {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 4;
+  font-family: "helvetica";
+  font-size: 14px;
+}
